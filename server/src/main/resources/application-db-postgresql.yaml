@@ -1,0 +1,14 @@
+app:
+  database:
+    # Default host for postgresql
+    host: localhost:5432
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${app.database.host}/${app.database.name}
+  jpa:
+    database: postgresql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

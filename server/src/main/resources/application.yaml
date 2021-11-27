@@ -1,1 +1,51 @@
+app:
+    database:
+        name: judoclub
+        # Default database
+        target: @app.database.target@
+        # Default credentials
+        username: user
+        password: user
+        # Database structure
+        # Managed by flyway by default
+        flyway:
+            enabled: true
+        hbm2ddl: none
 
+info:
+    app:
+        name: Judoclub server
+    api:
+        version: @project.version@
+
+springdoc:
+    packagesToScan: cloud.gruson.judoclub.server
+    pathsToMatch: /api/**
+    use-management-port: true
+
+management:
+    server:
+        port: 9090
+    endpoints:
+        web:
+            exposure:
+                include: health, info, openapi, swaggerui
+
+spring:
+    profiles:
+        include: @profiles.from.maven@,db-${app.database.target}
+    h2:
+        console:
+            enabled: false
+    datasource:
+        username: ${app.database.username}
+        password: ${app.database.password}
+    flyway:
+        enabled: ${app.database.flyway.enabled}
+    jpa:
+        open-in-view: false
+        properties:
+            hibernate:
+                hbm2ddl:
+                    auto: ${ara.database.hbm2ddl}
+                #globally_quoted_identifiers: false
