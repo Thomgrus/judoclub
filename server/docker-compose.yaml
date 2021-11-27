@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    image: "postgres:12"
+    pull_policy: always
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=judoclub
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=user
+    ports:
+      - 5432:5432
