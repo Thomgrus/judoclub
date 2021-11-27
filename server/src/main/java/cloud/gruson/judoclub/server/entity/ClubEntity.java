@@ -6,12 +6,11 @@ import org.hibernate.annotations.GenericGenerator;
 import lombok.Data;
 
 import java.util.UUID;
-import java.time.LocalDate;
 
 @Data
 @Entity
-public class MemberEntity {
-    
+public class ClubEntity {
+
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
@@ -21,24 +20,6 @@ public class MemberEntity {
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
 
-    private String firstName;
-
-    private String lastName;
-
-    private String address;
-
-    private String city;
-
-    private String zipCode;
-
-    private String country;
-
-    private LocalDate birthDay;
-
-    private String phoneNumber;
-
-    private String email;
-
-    private String comment;
-
+    private String name;
+    
 }
