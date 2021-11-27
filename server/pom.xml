@@ -152,6 +152,7 @@
                 <configuration>
                     <skip>${maven.test.skip}</skip>
                     <excludes>
+						<exclude>cloud/gruson/judoclub/server/ServerApplication.class</exclude>
                         <exclude>cloud/gruson/judoclub/server/**/*Entity.class</exclude>
                         <exclude>**/config/*</exclude>
                     </excludes>
