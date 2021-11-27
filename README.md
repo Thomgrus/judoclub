@@ -1,4 +1,7 @@
 # judoclub
+
+![build](https://github.com/Thomgrus/judoclub/actions/workflows/build.yml/badge.svg) ![build](https://github.com/Thomgrus/judoclub/actions/workflows/codeql-analysis.yml/badge.svg)
+
 Judoclub application
 
 The code is located in `server` directory.
