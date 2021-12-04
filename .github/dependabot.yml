@@ -13,3 +13,9 @@ updates:
     target-branch: "main"
     schedule:
       interval: "daily"
+  # Maintain dependencies for node
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "main"
+    schedule:
+      interval: "daily"
