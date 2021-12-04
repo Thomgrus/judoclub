@@ -1,6 +1,6 @@
 # judoclub
 
-![build](https://github.com/Thomgrus/judoclub/actions/workflows/build.yml/badge.svg) ![build](https://github.com/Thomgrus/judoclub/actions/workflows/codeql-analysis.yml/badge.svg)
+![build](https://github.com/Thomgrus/judoclub/actions/workflows/build.yml/badge.svg) ![build](https://github.com/Thomgrus/judoclub/actions/workflows/codeql-analysis.yml/badge.svg) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Thomgrus_judoclub&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Thomgrus_judoclub)
 
 Judoclub application
 
@@ -80,3 +80,4 @@ You can now use the standard `git commit` to interact with a prompt to build you
 * [husky](https://github.com/typicode/husky)
 * [commitizen](https://github.com/commitizen/cz-cli)
 
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=Thomgrus_judoclub)
