@@ -4,6 +4,8 @@
 
 Judoclub application
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 The code is located in `server` directory.
 
 To display available command: `make` or `make help`
@@ -55,3 +57,26 @@ make update-version VERSION=X.Y.Z
 ```
 
 You can get current project version with `make get-version`
+
+## CONTRIBUTE
+
+This project use [Angular Commit Message Conventions](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format) in order to generate nice changelog and increase maintenability and lisibility.
+
+In local environment, you can use git hooks configured for developer.
+
+To enable this tools, `node` is required. You can follow this step to use it:
+
+```
+npm install
+npm run prepare
+```
+
+And that's all !
+
+You can now use the standard `git commit` to interact with a prompt to build your conventional commits.
+
+### Tools used
+
+* [husky](https://github.com/typicode/husky)
+* [commitizen](https://github.com/commitizen/cz-cli)
+
