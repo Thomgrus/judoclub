@@ -10,7 +10,7 @@ app:
         # Managed by flyway by default
         flyway:
             enabled: true
-        hbm2ddl: none
+        hbm2ddl: validate
 
 info:
     app:

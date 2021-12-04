@@ -1,30 +1,38 @@
 package cloud.gruson.judoclub.server.entity;
 
-import java.util.List;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 
 import lombok.Data;
 
 @Data
 @Entity
-public class ClubEntity {
-
+public class TransactionEntity {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "club_id")
     @SequenceGenerator(name = "club_id", sequenceName = "club_id", allocationSize = 1)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private LocalDateTime dateTime;
 
-    @OneToMany
-    private List<ClasseEntity> classes;
-    
+    private double amount;
+
+    private String description;
+
+    private String method;
+
+    private TransactionTypeEntity type;
+
+    public enum TransactionTypeEntity {
+        PAYMENT, DUE, DISCOUNT;
+    }
+
 }
