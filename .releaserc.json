@@ -1,0 +1,19 @@
+{
+    "branches": [
+        {"name": "main"}
+    ],
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        ["@semantic-release/exec", {
+            "prepareCmd": "make -s -C code update-version VERSION=${nextRelease.version}"
+        }],
+        ["@semantic-release/changelog", {
+            "changelogFile": "docs/CHANGELOG.md"
+        }],
+        ["@semantic-release/git", {
+            "assets": ["docs/CHANGELOG.md", "**/pom.xml"]
+        }],
+        "@semantic-release/github"
+    ]
+}

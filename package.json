@@ -1,8 +1,13 @@
 {
+  "name": "judoclub",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/exec": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "semantic-release": "^18.0.1"
   },
   "scripts": {
     "prepare": "husky install"

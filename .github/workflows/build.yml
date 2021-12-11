@@ -24,6 +24,17 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
           cache: 'maven'
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "16"
+          cache: 'npm'
+      - run: npm ci
+
+      - run: npx semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Cache SonarCloud packages
         uses: actions/cache@v2
