@@ -68,7 +68,6 @@ To enable this tools, `node` is required. You can follow this step to use it:
 
 ```
 npm install
-npm run prepare
 ```
 
 And that's all !
