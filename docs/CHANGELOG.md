@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Thomgrus/judoclub/compare/v1.0.0...v1.1.0) (2022-02-12)
+
+
+### Features
+
+* **server:** add QRCode generator ([2b11da0](https://github.com/Thomgrus/judoclub/commit/2b11da069c3fb9018a05f8fbff3c42e12ed0eb78))
+
 # 1.0.0 (2021-12-11)
 
 

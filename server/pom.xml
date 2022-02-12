@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>cloud.gruson.judoclub</groupId>
 	<artifactId>server</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<name>server</name>
 	<description>Gestion des adhérents du judoclub</description>
 	<properties>
