@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Thomgrus/judoclub/compare/v1.1.0...v1.2.0) (2022-02-13)
+
+
+### Features
+
+* **server:** add QR Code scanner ([05daec4](https://github.com/Thomgrus/judoclub/commit/05daec460eb8e4186dcf5e98f5d55d20712f1a0d)), closes [#1](https://github.com/Thomgrus/judoclub/issues/1)
+
 # [1.1.0](https://github.com/Thomgrus/judoclub/compare/v1.0.0...v1.1.0) (2022-02-12)
 
 
