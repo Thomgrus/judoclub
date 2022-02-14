@@ -47,8 +47,12 @@ jobs:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
-      - name: Build and analyze
+      - name: Build
+        run: mvn -f server -B clean install spring-boot:build-image
+
+      - name: Analyse
+        if: ${{ github.actor != 'dependabot[bot]' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -f server -B clean install spring-boot:build-image org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        run: mvn -f server -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
