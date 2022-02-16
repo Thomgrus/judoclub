@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Thomgrus/judoclub/compare/v1.2.0...v1.3.0) (2022-02-16)
+
+
+### Features
+
+* **server:** add member rest repository ([66192f5](https://github.com/Thomgrus/judoclub/commit/66192f58a0f8a22e3519c8a90518b5ecdea6a3a0))
+
 # [1.2.0](https://github.com/Thomgrus/judoclub/compare/v1.1.0...v1.2.0) (2022-02-13)
 
 
