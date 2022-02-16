@@ -21,7 +21,9 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
 import cloud.gruson.judoclub.server.config.ExternalBeanConfiguration;
 
-@SpringBootTest(webEnvironment = WebEnvironment.NONE)
+@SpringBootTest(webEnvironment = WebEnvironment.NONE, properties = {
+    "springdoc.api-docs.enabled=false"
+})
 class QRCodeControllerTest {
 
     @Autowired
