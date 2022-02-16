@@ -20,10 +20,13 @@ info:
 
 springdoc:
     packagesToScan: cloud.gruson.judoclub.server
-    pathsToMatch: /api/**
+    pathsToMatch: /**
     use-management-port: true
 
 management:
+    info:
+        env:
+            enabled: true
     server:
         port: 9090
     endpoints:
