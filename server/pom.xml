@@ -17,7 +17,7 @@
 		<repackage.classifier />
 
 		<spring-native.version>0.11.0-RC1</spring-native.version>
-        <jacoco.version>0.8.7</jacoco.version>
+        <jacoco.version>0.8.8</jacoco.version>
 		<zxing.version>3.4.1</zxing.version>
 
 		<profiles.from.maven>default</profiles.from.maven>
