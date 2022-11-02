@@ -18,7 +18,7 @@
 
 		<spring-native.version>0.11.0-RC1</spring-native.version>
         <jacoco.version>0.8.8</jacoco.version>
-		<zxing.version>3.5.0</zxing.version>
+		<zxing.version>3.5.1</zxing.version>
 
 		<profiles.from.maven>default</profiles.from.maven>
 		<app.database.target>h2</app.database.target>
